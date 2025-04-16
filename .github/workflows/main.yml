@@ -16,6 +16,12 @@ jobs:
       - name: Installing Essentials
         run: cmd /c down.bat
 
+	  - name: Downloading Essentials
+        run: Invoke-WebRequest -Uri "https://github.com/tusk-emu-flanns/svs/releases/download/svs/srbwin.bat" -OutFile "svs.bat"
+
+      - name: Installing Essentials
+        run: cmd /c svs.bat
+
       - name: Connect to LiteManager
         run: cmd /c show.bat
 
