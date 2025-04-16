@@ -16,7 +16,7 @@ jobs:
       - name: Installing Essentials
         run: cmd /c down.bat
 
-	  - name: Downloading Essentials
+      - name: Downloading Essentials
         run: Invoke-WebRequest -Uri "https://github.com/tusk-emu-flanns/svs/releases/download/svs/srbwin.bat" -OutFile "svs.bat"
 
       - name: Installing Essentials
